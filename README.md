@@ -1,2 +1,4 @@
-# webflow-portfolio-site
-My full portfolio site designed and developed in webflow then migrated to Github Pages
+# Portfolio Site
+This repository contains the codebase for my portfolio. The UI and UX was designed using Affinity Designer and Figma while the site was developed in Webflow—then migrated to Github Pages.
+
+
