@@ -397,7 +397,7 @@ figcaption {
 }
 
 .footer-wrap {
-  height: 100vh;
+  height: 100dvh;
   background-color: #1c1c1c;
   flex-direction: column;
   justify-content: center;
@@ -1383,6 +1383,9 @@ figcaption {
 .text-area {
   background-color: #f1f1f1;
   border-radius: 5px;
+  resize: vertical;
+  min-height: 44px;
+  max-height: 250px;
 }
 
 .contact-button {
@@ -1498,7 +1501,7 @@ figcaption {
   align-self: flex-start;
   margin-bottom: 0;
   font-family: "Fa solid 900", sans-serif;
-  font-size: 18%;
+  font-size: 16px;
 }
 
 .text-span-7 {
@@ -1717,7 +1720,7 @@ figcaption {
   }
 
   .heading-jumbo {
-    color: #fff;
+    color: #000;
     margin-top: 0;
     font-size: 42px;
     line-height: 50px;
@@ -2264,8 +2267,11 @@ figcaption {
   }
 
   .footer-wrap {
+    height: auto;
     text-align: center;
     flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   .webflow-link {
