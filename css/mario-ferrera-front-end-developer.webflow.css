@@ -571,10 +571,16 @@ figcaption {
   align-items: center;
   display: flex;
   position: static;
+  color: #000;
 }
 
 .navbar-brand {
   align-self: auto;
+}
+
+.navbar-name {
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .nav-menu-wrapper {
@@ -598,13 +604,14 @@ figcaption {
   margin-right: 5px;
   padding: 0 10px;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 20px;
   text-decoration: none;
+  transition: 250ms all;
 }
 
 .nav-link:hover {
-  color: rgba(26, 27, 31, .75);
+  color: #ff7a00;
 }
 
 .nav-link:focus-visible {
@@ -690,13 +697,13 @@ figcaption {
   padding-left: 10px;
   font-weight: 600;
   text-decoration: none;
-  transition-property: none;
+  transition: 250ms all ease-in-out;
 }
 
 .card-paragraph {
   margin-bottom: 0;
   font-family: PT Sans, sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
 }
 
@@ -1142,7 +1149,7 @@ figcaption {
   justify-content: flex-start;
   align-self: auto;
   align-items: center;
-  margin-bottom: 60px;
+  /* margin-bottom: 10px; */
   display: flex;
 }
 
@@ -1159,6 +1166,7 @@ figcaption {
 
 .image-14 {
   color: #fff;
+  cursor: auto;
 }
 
 .blinky {
@@ -1171,7 +1179,7 @@ figcaption {
   width: 100%;
   color: #000;
   text-transform: none;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   font-family: Montserrat, sans-serif;
   font-size: 32px;
   font-style: normal;
@@ -1187,12 +1195,10 @@ figcaption {
 
 .tech-stack-icon {
   color: #000;
-  text-align: center;
   cursor: pointer;
-  object-fit: fill;
-  margin-right: 16px;
+  /* margin-right: 16px; */
   font-family: "Fa brands 400", sans-serif;
-  font-size: 45px;
+  font-size: 40px;
   font-weight: 400;
   display: inline-block;
   position: relative;
@@ -1200,8 +1206,16 @@ figcaption {
   overflow: visible;
 }
 
+.tech-stack-text {
+  font-weight: 600;
+  font-size: 15px;
+  text-align: center;
+  margin: 8px;
+}
+
 .columns-8 {
   align-self: flex-start;
+  width: 100%;
 }
 
 .column-7 {
@@ -1257,8 +1271,8 @@ figcaption {
   font-weight: 400;
   position: fixed;
   top: auto;
-  bottom: 9%;
-  left: 0%;
+  bottom: 6%;
+  left: 1%;
   right: auto;
   transform: rotate(-90deg);
 }
@@ -1333,8 +1347,9 @@ figcaption {
 }
 
 .link-block {
+  text-align: center;
   max-width: 35px;
-  margin-right: 30px;
+  /* margin-right: 30px; */
   padding-top: 3px;
   overflow: visible;
 }
@@ -1452,18 +1467,18 @@ figcaption {
 .about-p-block-1 {
   margin-bottom: 30px;
   font-family: PT Sans, sans-serif;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .about-p-block-2 {
   margin-top: 20px;
   font-family: PT Sans, sans-serif;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .heading-12 {
   margin-bottom: 0;
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 700;
   line-height: 36px;
 }
@@ -1675,19 +1690,19 @@ figcaption {
   margin-left: 0;
   margin-right: 53px;
   font-family: PT Sans, sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 400;
 }
 
 .div-block-18 {
-  grid-column-gap: 120px;
-  grid-row-gap: 120px;
-  flex-direction: row;
+  grid-row-gap: 60px;
+  flex-direction: column;
   justify-content: flex-start;
   align-self: flex-start;
   align-items: stretch;
   padding-left: 30px;
   display: flex;
+  width: 100%;
 }
 
 .text-span-8 {
@@ -1890,7 +1905,7 @@ figcaption {
   }
 
   .card-paragraph {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
   }
 
@@ -2573,7 +2588,7 @@ figcaption {
   .card-paragraph {
     text-align: center;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 22px;
   }
 
   .card-work {

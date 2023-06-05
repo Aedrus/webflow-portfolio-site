@@ -94,6 +94,7 @@ html.w-mod-touch * {
   text-decoration: none;
   cursor: pointer;
   border-radius: 0;
+  transition: 250ms all ease-in-out;
 }
 input.w-button {
   -webkit-appearance: button;
@@ -514,6 +515,8 @@ textarea.w-select {
 .w-container {
   margin-left: auto;
   margin-right: auto;
+  padding-left: 5%;
+  padding-right: 5%;
   max-width: 940px;
 }
 .w-container:before,
@@ -565,6 +568,10 @@ textarea.w-select {
 }
 .w-col-2 {
   width: 16.66666667%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-right: 10px; */
 }
 .w-col-3 {
   width: 25%;
@@ -602,6 +609,8 @@ textarea.w-select {
 @media screen and (max-width: 991px) {
   .w-container {
     max-width: 728px;
+    padding-left: 2%;
+    padding-right: 2%
   }
   .w-hidden-main {
     display: inherit !important;
@@ -711,6 +720,8 @@ textarea.w-select {
 @media screen and (max-width: 479px) {
   .w-container {
     max-width: none;
+    padding-left: 1%;
+    padding-right: 1%
   }
   .w-hidden-main {
     display: inherit !important;
