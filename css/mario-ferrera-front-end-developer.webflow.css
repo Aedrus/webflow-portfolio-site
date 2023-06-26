@@ -23,8 +23,8 @@ h2 {
 }
 
 h3 {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   font-size: 30px;
   font-weight: 400;
   line-height: 46px;
@@ -55,7 +55,7 @@ h6 {
 }
 
 p {
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 a {
@@ -377,13 +377,22 @@ figcaption {
 }
 
 .footer-wrap {
-  height: 100dvh;
   background-color: #1c1c1c;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   display: flex;
   position: relative;
+  padding: 60px 0;
+}
+
+.footer-attr {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  background: #222;
 }
 
 .webflow-link {
@@ -653,6 +662,13 @@ figcaption {
   font-weight: 400;
   font-size: 20px;
   font-family: PT Sans, sans-serif;
+  text-align: left;
+}
+
+.sub-text {
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 16px;
 }
 
 .section-heading {
@@ -673,10 +689,10 @@ figcaption {
 }
 
 .heading-4 {
-  margin-top: 5px;
-  margin-bottom: 20px;
-  font-size: 40px;
+  margin-bottom: 10px;
+  font-size: 28px;
   font-weight: 700;
+  /* line-height: 2.4rem; */
 }
 
 .button-2 {
@@ -692,57 +708,53 @@ figcaption {
 }
 
 .card-paragraph {
-  margin-bottom: 25px;
+  text-align: left;
   font-family: PT Sans, sans-serif;
   font-size: 18px;
   font-weight: 400;
 }
 
 .card-work {
-  /* box-shadow: 5px 0px 25px #888; */
   color: #000;
   background-color: hsl(0, 0%, 97%);
-  border-radius: 1%;
-  flex: 0 auto;
-  order: 0;
   align-self: center;
   margin-top: 50px;
   display: block;
+  width: 100%;
   /* overflow: hidden; */
 }
 
 .card-buttons {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .button-5 {
-  min-width: 160px;
+  min-width: 100%;
   text-align: center;
   background-color: transparent;
   border: 2px solid;
+  border-radius: 0.25rem;
   color: #fd5618;
-  margin-top: 25px;
-  margin-right: 30px;
   font-weight: 600;
   text-decoration: none;
   transition: 250ms all ease-in-out;
 }
 
 .button-5:hover {
-  /* background: linear-gradient(150deg, #0f37ff0c, #9aa0c000 ); */
-  border-color: #ab441e;
-  color: #ab441e;
-  transition: 300ms all ease-in-out;
+  background: #fd5618;
+  /* border-color: #ab441e; */
+  color: white;
+  transition: 200ms all ease-in-out;
 }
 
 .column-2 {
-  flex: 0 auto;
   order: 1;
   align-self: center;
   justify-content: center;
-  padding: 50px 50px;
+  padding: 32px 26px;
 }
 
 .about-tech {
@@ -755,40 +767,63 @@ figcaption {
   padding-top: 30px;
 }
 
-.text-gradient, 
-.text-gradient h1 {
-  font-weight: 700;
-  font-size: 16px;
-  background: linear-gradient(140deg, #fd5618, #eb9c7169);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin: 0;
+.text-gradient {
+  margin: 32px 0;
+}
+
+.text-gradient p {
+  font-weight: 600;
+  font-size: 15px;
+  background: linear-gradient(150deg, #fd5618 60%, #b3451c);
+  padding: 4px 15px;
+  border-radius: 0.25rem;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  color: white;
+  cursor: default;
+  /* background-clip: text; */
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
+}
+
+.text-gradient p:hover {
+  transform: translateY(-2px);
+  transition: all 100ms ease-in;
 }
 
 .columns-2 {
   max-height: 900px;
   min-height: 400px;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  flex-direction: row;
+  width: 100%;
   justify-content: center;
   align-items: center;
   display: flex;
 }
 
+.columns-2-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
 .paragraph-2 {
-  color: #555;
-  margin-bottom: 0;
+  color: rgba(0, 0, 0, 0.898);
   font-family: Montserrat, sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
   display: inline-block;
+  /* margin-bottom: 5px; */
+  background: #fd5618;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .image-6 {
-  /* width: 1600px;
-  height: 420px; */
+  height: 310px;
   object-fit: cover;
   /* border-radius: 1%; */
   position: relative;
@@ -825,6 +860,13 @@ figcaption {
   text-align: center;
   margin-bottom: 0;
   position: static;
+}
+
+.work-subheading h3 {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  font-weight: 600;
 }
 
 .grid {
@@ -1028,7 +1070,7 @@ figcaption {
 .work-section-heading {
   color: #000;
   background-color: rgba(0, 0, 0, 0);
-  padding: 0 300px;
+  padding: 0 200px;
   position: relative;
 }
 
@@ -1233,6 +1275,7 @@ figcaption {
 }
 
 .tech-stack-text {
+  line-height: 1.2rem;
   font-weight: 600;
   font-size: 15px;
   text-align: center;
@@ -1255,7 +1298,7 @@ figcaption {
 .flex-row {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -1372,7 +1415,7 @@ figcaption {
 .column-8 {
   border-radius: 0;
   order: -1;
-  width: 35%;
+  width: 100%;
   align-self: center;
 }
 
@@ -1380,6 +1423,7 @@ figcaption {
   color: #fd5618;
   letter-spacing: 0.8px;
   border: 2px solid #fd5618;
+  border-radius: 0.25rem;
   background: transparent;
   align-self: flex-start;
   padding-left: 25px;
@@ -1562,6 +1606,7 @@ figcaption {
   flex: 1;
   align-self: center;
   margin-top: 50px;
+  text-align: left;
 }
 
 .div-block-16 h2 {
@@ -1827,8 +1872,7 @@ figcaption {
 
 @media screen and (max-width: 991px) {
   .container {
-    width: 80%;
-    max-width: 650px;
+    width: 70%;
   }
 
   .heading-jumbo {
@@ -1935,11 +1979,6 @@ figcaption {
     justify-content: space-between;
   }
 
-  .button-5 {
-    width: 45%;
-    margin: 20px 0;
-  }
-
   .hero-section {
     max-width: 650px;
   }
@@ -2003,8 +2042,8 @@ figcaption {
   }
 
   .heading-4 {
-    text-align: center;
-    font-size: 30px;
+    text-align: left;
+    font-size: 24px;
   }
 
   .button-2 {
@@ -2020,24 +2059,18 @@ figcaption {
     line-height: 24px;
   }
 
-  .card-work {
-    border: 1px #000;
-    border-radius: 20px;
-    margin-top: 0;
-    margin-bottom: 100px;
-    overflow: hidden;
-  }
-
   .column-2 {
-    text-align: center;
-    padding: 20px 0;
+    padding: 26px 20px;
   }
 
   .columns-2 {
     max-height: none;
     max-width: none;
     flex-direction: column;
-    align-items: center;
+  }
+
+  .columns-2-wrapper {
+    width: 70%;
   }
 
   .paragraph-2 {
@@ -2045,11 +2078,6 @@ figcaption {
     font-weight: 400;
     display: none;
   }
-
-  /* .image-6 {
-    width: auto;
-    height: 250px;
-  } */
 
   .paragraph-5 {
     font-size: 18px;
@@ -2157,12 +2185,6 @@ figcaption {
   .image-19 {
     display: none;
     left: 18%;
-  }
-
-  .column-8 {
-    text-align: center;
-    align-self: center;
-    width: 60%;
   }
 
   .button-4 {
@@ -2481,20 +2503,13 @@ figcaption {
     margin-left: 0;
   }
 
-  /* .image-6 {
-    height: auto;
-    max-height: 300px;
-    min-height: 200px;
-  } */
+  .image-6 {
+    /* height: 280px; */
+  }
 
   .card-buttons {
     flex-wrap: wrap;
     width: 100%;
-  }
-
-  .button-5 {
-    width: 100%;
-    margin: 15px 0;
   }
 
   .image-13 {
@@ -2715,15 +2730,17 @@ figcaption {
   }
 
   .heading-4 {
-    text-align: center;
     font-size: 24px;
     line-height: 32px;
   }
 
   .card-paragraph {
-    text-align: center;
     font-size: 16px;
     line-height: 22px;
+  }
+
+  .card-buttons {
+    margin-top: 22px;
   }
 
   .card-work {
@@ -2731,20 +2748,12 @@ figcaption {
     margin-bottom: 40px;
   }
 
-  .column-2 {
-    flex-direction: column;
-    justify-content: center;
-    align-self: center;
-    align-items: center;
-    padding-left: 0;
-    padding-right: 0;
-    display: flex;
+  .columns-2-wrapper {
+   width: 100%;
   }
 
-  .columns-2 {
-    max-height: none;
-    min-height: 0;
-    flex-direction: column;
+  .flex-row {
+    display: none;
   }
 
   .paragraph-2 {
@@ -2887,12 +2896,6 @@ figcaption {
     bottom: auto;
     left: auto;
     right: 0%;
-  }
-
-  .column-8 {
-    text-align: center;
-    align-self: center;
-    width: 80%;
   }
 
   .button-4 {
