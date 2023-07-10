@@ -533,7 +533,7 @@ textarea.w-select {
   clear: both;
 }
 .w-container .w-row {
-  padding: 0 30px;
+  /* padding-left: 30px; */
   /* margin-left: -10px;
   margin-right: -10px; */
 }
@@ -555,7 +555,6 @@ textarea.w-select {
 }
 .w-col {
   position: relative;
-  float: left;
   width: 100%;
   min-height: 1px;
   /* padding-left: 10px;
@@ -571,6 +570,8 @@ textarea.w-select {
 .w-col-2 {
   width: 0%;
   margin-right: 130px;
+  margin-bottom: 50px;
+  line-height: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -666,6 +667,7 @@ textarea.w-select {
   }
   .w-col-2 {
     width: 16%;
+    margin-bottom: 20px;
     margin-right: 0px;
   }
 }
