@@ -304,7 +304,7 @@ figcaption {
   text-transform: none;
   font-size: 42px;
   font-weight: 700;
-  margin-bottom: 25px;
+  margin-bottom: 28px;
 }
 
 .text-field {
@@ -646,7 +646,7 @@ figcaption {
 }
 
 .phase-description-white {
-  color: #fff;
+  color: hsl(0, 0%, 75%);
   margin-left: 0;
   margin-right: 0;
   font-family: PT Sans, sans-serif;
@@ -1287,13 +1287,13 @@ figcaption {
 
 .fa-generic-white {
   font-family: "Fa solid 400";
-  color: white;
+  color: #fd5618;
   margin-right: 24px;
 }
 
 .fa-generic-black {
   font-family: "Fa solid 400";
-  color: black;
+  color: #fd5618;
   margin-right: 24px;
 }
 
@@ -1783,11 +1783,11 @@ figcaption {
   text-transform: none;
   font-size: 42px;
   font-weight: 700;
-  margin-bottom: 25px;
+  margin-bottom: 28px;
 }
 
 .phase-description-black {
-  color: #222;
+  color: hsl(0, 0%, 25%);
   margin-left: 0;
   margin-right: 0;
   font-family: PT Sans, sans-serif;
