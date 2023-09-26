@@ -26,6 +26,7 @@
   content: "\e601";
 }
 .w-icon-nav-menu:before {
+  color: white;
   content: "\e602";
 }
 .w-icon-arrow-down:before,
@@ -568,10 +569,9 @@ textarea.w-select {
   width: 8.33333333%;
 }
 .w-col-2 {
-  width: 0%;
-  margin-right: 130px;
+  width: 11%;
+  /* margin-right: 130px; */
   margin-bottom: 50px;
-  line-height: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
