@@ -26,7 +26,7 @@ h3 {
   margin-top: 0px;
   margin-bottom: 0px;
   font-size: 30px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 46px;
 }
 
@@ -235,6 +235,25 @@ figcaption {
 
 .logo-link:active {
   opacity: .7;
+}
+
+.text-link {
+  position: relative;
+}
+.text-link::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  height: 0.1em;
+  width: 0%;
+  background-color: #fd5618;
+  transition: all 300ms;
+}
+
+.text-link:hover::after {
+  transition: all 300ms;
+  width: 100%;
 }
 
 .navigation-item {
@@ -533,15 +552,29 @@ figcaption {
   align-items: center;
   display: flex;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .hero-backing-mask {
   position: absolute;
+  top: 0;
+  right: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.15;
-  background-image: linear-gradient(#fd5618, hsl(0, 0%, 97%), hsl(0, 0%, 97%));
+  opacity: 0.1;
+  transform: rotate(180deg);
+  /* background-image: linear-gradient(#fd5618, hsl(0, 0%, 97%), hsl(0, 0%, 97%)); */
+  background-image: url(/images/shapelined-_JBKdviweXI-unsplash.jpg);
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-arrow {
+  font-size: 30px;
+  position: absolute;
+  bottom: -15px;
+  z-index: 1;
 }
 
 .header {
@@ -582,7 +615,7 @@ figcaption {
   align-items: center;
   display: flex;
   position: fixed;
-  background: rgba(0, 0, 0, 90%);
+  background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(30, 30, 30, 0.95));
 }
 
 .navbar-wrapper a {
@@ -597,6 +630,7 @@ figcaption {
   font-size: 20px;
   font-weight: 700;
   color: white;
+  margin: 0;
 }
 
 .nav-menu-wrapper {
@@ -609,8 +643,11 @@ figcaption {
 .nav-menu-two {
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 0;
   display: flex;
+}
+
+.nav-menu-two li {
+  margin: 0;
 }
 
 .nav-link {
@@ -642,7 +679,7 @@ figcaption {
 }
 
 .side_accent {
-  z-index: 3;
+  z-index: 10;
   width: 8px;
   height: 100vh;
   min-height: 0;
@@ -686,6 +723,10 @@ figcaption {
   text-align: left;
 }
 
+.summary-text h3 {
+  font-weight: 600;
+}
+
 .sub-text {
   margin-top: 10px;
   font-weight: 500;
@@ -710,10 +751,9 @@ figcaption {
 }
 
 .heading-4 {
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   font-size: 28px;
   font-weight: 700;
-  /* line-height: 2.4rem; */
 }
 
 .button-2 {
@@ -778,7 +818,7 @@ figcaption {
 
 .about-tech {
   width: 100%;
-  padding: 0 30px;
+  padding: 50px 30px;
   overflow: hidden;
 }
 
@@ -825,12 +865,11 @@ figcaption {
 }
 
 .paragraph-2 {
-  color: rgba(0, 0, 0, 0.898);
-  font-family: Montserrat, sans-serif;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0.4rem 0 1.3rem 0;
+  font-variant-caps: all-petite-caps;
   display: inline-block;
-  /* margin-bottom: 5px; */
   background: #fd5618;
   background-clip: text;
   -webkit-background-clip: text;
@@ -1061,7 +1100,7 @@ figcaption {
   outline-offset: -2px;
   text-align: center;
   background-color: #fd5618;
-  border-radius: 100px 200px;
+  border-radius: 30px 50px;
   outline: 3px dashed #272727;
   margin-bottom: 32px;
   position: static;
@@ -1110,7 +1149,7 @@ figcaption {
   padding-top: 15px;
   display: flex;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .div-block-8 {
@@ -1189,7 +1228,6 @@ figcaption {
   align-self: flex-start;
   align-items: center;
   display: flex;
-  overflow: hidden;
 }
 
 .about-section {
@@ -1204,7 +1242,7 @@ figcaption {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 100px;
+  padding-top: 200px;
   padding-bottom: 100px;
   display: flex;
   position: relative;
@@ -1436,13 +1474,13 @@ figcaption {
 }
 
 .image-18 {
-  min-width: 100px;
+  min-width: 250px;
   opacity: 1;
-  border-radius: 50px;
+  border-radius: 10px;
   position: absolute;
-  top: 0%;
+  top: 10%;
   bottom: auto;
-  left: 30%;
+  left: 20%;
   right: auto;
 }
 
@@ -1458,13 +1496,10 @@ figcaption {
 }
 
 .image-19 {
-  opacity: .05;
-  mix-blend-mode: normal;
+  opacity: .06;
   position: absolute;
   top: 0%;
-  bottom: auto;
-  left: -20%;
-  right: auto;
+  left: 0;
 }
 
 .column-8 {
@@ -1813,8 +1848,12 @@ figcaption {
   margin-left: 0;
   margin-right: 53px;
   font-family: PT Sans, sans-serif;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 400;
+}
+
+.hero-image {
+  width: 100%;
 }
 
 .div-block-18 {
@@ -1857,13 +1896,22 @@ figcaption {
   align-items: center;
   padding: 50px 100px 150px 100px;
 }
-.testimonials-avatar h3 {
-  font-weight: 700;
+.testimonials h3 {
+  font-weight: 600;
   line-height: 2rem;
+}
+.testimonials-backing-image {
+  opacity: .1;
+  width: 20%;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 50px;
 }
 .testimonials h4 {
   font-weight: 400;
-  line-height: 2.5rem;
+  font-size: 1.2rem;
 }
 .testimonials p {
   font-size: 20px;
@@ -1876,8 +1924,7 @@ figcaption {
 }
 
 .quotes {
-  font-size: 32px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
 }
 
 /* Animations */
@@ -2607,10 +2654,6 @@ figcaption {
     margin-left: 0;
   }
 
-  .image-6 {
-    /* height: 280px; */
-  }
-
   .card-buttons {
     flex-wrap: wrap;
     width: 100%;
@@ -2633,6 +2676,7 @@ figcaption {
 
   .column-5 {
     order: -1;
+    margin-bottom: 40px;
   }
 
   .about-section {
@@ -2722,6 +2766,15 @@ figcaption {
     margin: 0;
   }
 
+  .hero-text {
+    /* max-width: 500px; */
+    padding: 0 140px;
+  }
+
+  .hero-image {
+    width: 40%;
+  }
+
   .div-block-18 {
     grid-column-gap: 20px;
     grid-row-gap: 20px;
@@ -2748,6 +2801,10 @@ figcaption {
 
   .icon-2, .icon-3 {
     display: none;
+  }
+
+  .testimonials {
+    padding: 50px 15% 150px 15%;
   }
 }
 
@@ -3066,7 +3123,7 @@ figcaption {
     align-self: center;
     margin-top: -10px;
     margin-right: 0;
-    padding-bottom: 0;
+    padding: 0 20px;
     font-size: 18px;
   }
 
@@ -3083,6 +3140,13 @@ figcaption {
     width: 120px;
     margin-bottom: 5px;
     padding-bottom: 0;
+  }
+
+  .testimonials {
+    padding: 20px 5% 50px 5%;
+  }
+  .testimonials h4 {
+    line-height: 1.6rem;
   }
 }
 
