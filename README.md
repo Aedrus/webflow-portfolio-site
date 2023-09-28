@@ -1,6 +1,6 @@
-# Portfolio Site
-This repository contains the codebase for my portfolio. The UI and UX was designed in Affinity Designer and Figma while the site was developed in Webflow then migrated to Github Pages.
+![hero image](/assets/hero.jpg "alt description")
 
-For past and current iterations, you can find each update as a commit on the main branch.
+<h1 style="text-align: left"> Mario Ferrera Portfolio </h1>
+This is the official repository for my portfolio website. It was designed from scratch in Figma, built in the Webflow CMS, and then later migrated to GitHub where it is now managed.
 
 Find the website [here](https://marioferrera.com)
