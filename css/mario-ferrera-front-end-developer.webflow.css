@@ -1532,7 +1532,6 @@ figcaption {
   text-align: center;
   max-width: 35px;
   height: 30%;
-  /* margin-right: 30px; */
   overflow: visible;
 }
 
@@ -1855,6 +1854,12 @@ figcaption {
 .hero-image {
   width: 100%;
 }
+.hero-image-arrow {
+  position: absolute;
+  top: -20px;
+  left: -55px;
+  width: 90px;
+}
 
 .div-block-18 {
   grid-row-gap: 60px;
@@ -2015,6 +2020,10 @@ figcaption {
     margin-top: 0;
     font-size: 42px;
     line-height: 50px;
+  }
+
+  .summary-text {
+    font-size: 16px;
   }
 
   .paragraph-light {
@@ -2329,8 +2338,8 @@ figcaption {
   }
 
   .link-block {
-    max-width: 25px;
-    margin-right: 15px;
+    /* max-width: 25px;
+    margin-right: 15px; */
   }
 
   .heading-10 {
@@ -2700,6 +2709,10 @@ figcaption {
     justify-content: center;
   }
 
+  .about-p-block-1 {
+    padding: 0 20px;
+  }
+
   .paragraph-9 {
     text-align: left;
     font-size: 14px;
@@ -2767,12 +2780,14 @@ figcaption {
   }
 
   .hero-text {
-    /* max-width: 500px; */
-    padding: 0 140px;
+    padding: 0 20%;
   }
 
   .hero-image {
     width: 40%;
+  }
+  .hero-image-arrow {
+    display: none;
   }
 
   .div-block-18 {
@@ -3071,7 +3086,7 @@ figcaption {
   }
 
   .link-block {
-    max-width: 23px;
+    /* max-width: 23px; */
   }
 
   .heading-10 {
