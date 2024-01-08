@@ -30,8 +30,14 @@
     <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-logo-left-container shadow-three w-nav">
       <div class="container-4"> 
         <div class="navbar-wrapper">
+          <div class="navbar-wrapper-shine"></div>
           <div class="navbar-brand w-nav-brand">
-            <h1 class="navbar-name"><a href="#hero" class="nav-link">Mario Ferrera</a></h1>
+            <a href="#hero" class="nav-link">
+              <img src="images/portfolio-brand-logo_white.webp" width="140">
+              <!-- <img src="images/ardent-ethos-logo-simple-white.png" alt="brand logo" width="28px">
+              <h1 class="navbar-name">Mario Ferrera</h1> -->
+            </a>
+            
           </div>
           <nav role="navigation" class="nav-menu-wrapper w-nav-menu">
             <ul role="list" class="nav-menu-two w-list-unstyled">
@@ -131,7 +137,7 @@
         <p class="about-p-block-1"><span>I&#x27;m a <strong class="bold-text">Front-End Engineer </strong>based in sunny Saint Petersburg, Florida.</span> I strive to create logical solutions that blend software development and graphic design for a meaningful product experience. <br><br>With a boundless curiosity for website development, I've worked on projects utilizing React.js to the deep nuances of C and everything in between! My style is clean, modern, and usability-rich!</p>
         <div class="div-block-14">
           <a href="#name-2" class="button-4 w-button">Get in Touch</a>
-          <p class="paragraph-8">or <span data-w-id="5b81261b-d144-03bb-0826-429a424ab273" class="text-span-4">Read More</span></p>
+          <p class="paragraph-8">or <span id="about-dropdown" class="text-span-4">Read More</span></p>
         </div>
       </div>
       <div class="column-7 w-col w-col-6">
@@ -371,13 +377,12 @@
         </button>
       </div>
       <div id="testimonials-container"></div>
+
       <!-- Testimonials Carousel Tabs -->
       <div class="testimonials-tabs">
         <button aria-label="carousel-tab" class="dot-tabs">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M156,128a28,28,0,1,1-28-28A28,28,0,0,1,156,128Z"></path></svg>
         </button>
         <button aria-label="carousel-tab" class="dot-tabs">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M156,128a28,28,0,1,1-28-28A28,28,0,0,1,156,128Z"></path></svg>
         </button>
       </div>
     </section>
@@ -388,7 +393,8 @@
     <img src="images/luca-bravo-9l_326FISzk-unsplash.jpg" loading="lazy" sizes="100vw" srcset="images/luca-bravo-9l_326FISzk-unsplash-p-500.jpg 500w, images/luca-bravo-9l_326FISzk-unsplash-p-800.jpg 800w, images/luca-bravo-9l_326FISzk-unsplash-p-1080.jpg 1080w, images/luca-bravo-9l_326FISzk-unsplash-p-1600.jpg 1600w, images/luca-bravo-9l_326FISzk-unsplash.jpg 1920w" alt="desk with laptop and chair setup in an orderly fashion" class="image-20">
     <div class="container-6 w-container">
       <a href="index.html" aria-current="page" class="webflow-link w-inline-block w--current">
-        <img src="images/Brand_Logo_Full.webp" width="146" sizes="145.9976043701172px" srcset="images/Brand_Logo_Full-p-500.webp 500w, images/Brand_Logo_Full-p-800.webp 800w, images/Brand_Logo_Full-p-1080.webp 1080w, images/Brand_Logo_Full.webp 1920w" alt="ardent ethos brand logo" class="webflow-logo-tiny"></a>
+        <img src="images/Brand_Logo_Full.webp" width="146" sizes="145.9976043701172px" srcset="images/Brand_Logo_Full-p-500.webp 500w, images/Brand_Logo_Full-p-800.webp 800w, images/Brand_Logo_Full-p-1080.webp 1080w, images/Brand_Logo_Full.webp 1920w" alt="ardent ethos brand logo" class="webflow-logo-tiny">
+      </a>
       <h1 class="heading-10">Let&#x27;s Get in Touch!</h1>
       <div class="footer-links">
         <div class="div-block-4">
@@ -430,7 +436,7 @@
     </div>
   </div>
   <div class="footer-attr">
-    <p>Copyright &copy; 2024. Mario Ferrera. All Rights Reserved.</p>
+    <p>Content Copyright &copy; 2024. Mario Ferrera. All Rights Reserved.</p>
   </div>
   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
   <script src="js/webflow.js" type="text/javascript"></script>
