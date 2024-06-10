@@ -679,7 +679,9 @@ figcaption {
   align-items: center;
   display: flex;
   position: fixed;
-  background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(30, 30, 30, 0.95));
+  backdrop-filter: blur(25px);
+  background: linear-gradient(rgba(0, 0, 0, 0.86), rgba(30, 30, 30, 0.80));
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .navbar-wrapper-shine {
@@ -939,7 +941,7 @@ figcaption {
   padding: 30px 0px;
 }
 
-.about-tech {
+.about-skills {
   width: 100%;
   padding: 50px 30px;
   overflow: hidden;
@@ -1425,10 +1427,9 @@ figcaption {
   margin-top: 0;
 }
 
-.tech-stack-icon {
+.about-skills-icon {
   color: #000;
   cursor: pointer;
-  /* margin-right: 16px; */
   font-family: "Fa brands 400", sans-serif;
   font-size: 40px;
   font-weight: 400;
@@ -1439,7 +1440,11 @@ figcaption {
   height: 12px;
 }
 
-.tech-stack-text {
+.skills-icon-grid {
+    gap: 0 0 0 2rem;
+}
+
+.about-skills-text {
   line-height: 1.2rem;
   font-weight: 600;
   font-size: 15px;
@@ -2131,7 +2136,7 @@ figcaption {
     transform: translateX(0%);
   }
 
-  .hidden.about-tech {
+  .hidden.about-skills {
     transition: none;
     opacity: 1.0;
     transform: translateX(0%);
@@ -2160,7 +2165,7 @@ figcaption {
   transition: 500ms all;
 }
 
-.hidden.about-tech {
+.hidden.about-skills {
   opacity: 0;
   transform: translateX(10%);
   transition: 500ms all;
@@ -2185,7 +2190,7 @@ figcaption {
     opacity: 1;
   }
 
-  .hidden.about-tech {
+  .hidden.about-skills {
     transition: none;
     transform: translateX(0%);
     opacity: 1;
@@ -2326,12 +2331,15 @@ figcaption {
   }
 
   .container-4 {
-    max-width: 650px;
+    max-width: 650px; 
   }
 
   .navbar-wrapper {
     justify-content: space-between;
     align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.86), rgba(30, 30, 30, 0.80));
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(30px);
   }
 
   .nav-menu-wrapper {
@@ -2474,11 +2482,11 @@ figcaption {
     padding-left: 0;
   }
 
-  .tech-stack-icon {
+  .about-skills-icon {
     font-size: 30px;
   }
 
-  .tech-stack-text {
+  .about-skills-text {
     font-size: 13px;
     line-height: 20px;
   }
@@ -3241,11 +3249,11 @@ figcaption {
     padding-left: 0;
   }
 
-  .tech-stack-icon {
+  .about-skills-icon {
     font-size: 28px;
   }
 
-  .tech-stack-text {
+  .about-skills-text {
     /* font-size: 10px;
     line-height: 20px; */
     display: none;
