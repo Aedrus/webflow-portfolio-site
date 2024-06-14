@@ -44,15 +44,27 @@ function createObserver() {
 // Testimonials Carousel
 // ==================================
 let AVATARS = {
-  femaleLight: {src: "images/avatar-female-light.png", alt: "avatar graphic female light"},
-  maleDark: {src: "images/avatar-male-dark.png", alt: "avatar graphic male dark"}
+  femaleLight: {src: "/images/avatar-female-light.png", alt: "avatar graphic female light"},
+  maleDark: {src: "/images/avatar-male-dark.png", alt: "avatar graphic male dark"}
 }
 
 document.addEventListener("DOMContentLoaded", function() {
   // Store testimonial data
   const testimonials = [
-    {avatar: AVATARS.femaleLight, name: "Stephanie Mason-Teague", company: {name: "Ormond Memorial Art Museum & Gardens", href: "https://www.ormondartmuseum.org/"}, text: "Mario did a wonderful job, on time, and exceeded our expectations. He was very professional to work with and delivered an exceptional product."},
-    {avatar: AVATARS.maleDark, name: "Nino Blac", company: {name: "Life180 Coaching", href: null}, text: "Collaborating with Mario was a fantastic experience. He is concise, thorough, and possesses a keen eye for detail. Mario excels at following instructions, consistently meeting deadlines. I highly recommend him to anyone in search of web design services. I look forward to the possibility of working with him again in the future."}
+    {
+        avatar: AVATARS.femaleLight,
+        name: "Stephanie Mason-Teague", 
+        company: {name: "Ormond Memorial Art Museum & Gardens", 
+        href: "https://www.ormondartmuseum.org/"}, 
+        text: "Mario did a wonderful job, on time, and exceeded our expectations. He was very professional to work with and delivered an exceptional product."
+    },
+    {
+        avatar: AVATARS.maleDark, 
+        name: "Nino Blac", 
+        company: {name: "Life180 Coaching", 
+            href: null}, 
+            text: "Collaborating with Mario was a fantastic experience. He is concise, thorough, and possesses a keen eye for detail. Mario excels at following instructions, consistently meeting deadlines. I highly recommend him to anyone in search of web design services. I look forward to the possibility of working with him again in the future."
+    }
   ];
 
   // Locate parent container
@@ -69,11 +81,11 @@ document.addEventListener("DOMContentLoaded", function() {
       <a href="${testimonial.company.href}" target="_blank" style="color: #fd5618; text-decoration: none;"><h4>${testimonial.company.name}</h4></a>
     </div>
     <div class="testimonials-rating">
-      <img src="images/star-fill.svg" alt="star rating graphic">
-      <img src="images/star-fill.svg" alt="star rating graphic">
-      <img src="images/star-fill.svg" alt="star rating graphic">
-      <img src="images/star-fill.svg" alt="star rating graphic">
-      <img src="images/star-fill.svg" alt="star rating graphic">
+      <img src="/images/star-fill.svg" alt="star rating graphic">
+      <img src="/images/star-fill.svg" alt="star rating graphic">
+      <img src="/images/star-fill.svg" alt="star rating graphic">
+      <img src="/images/star-fill.svg" alt="star rating graphic">
+      <img src="/images/star-fill.svg" alt="star rating graphic">
     </div>
     <p>${testimonial.text}</p>
     `
@@ -267,7 +279,7 @@ let sInterval;
 
 let runShine = () => {
   if (!sInterval) {
-    sInterval = setInterval(shineEffect, 7000)
+    sInterval = setInterval(shineEffect, 4000)
   }
 }
 
